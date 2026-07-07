@@ -1,0 +1,17 @@
+
+laxma@Laksh MINGW64 /d/Marquee_MERN (main)
+$ git branch
+  feature-button
+* main
+
+laxma@Laksh MINGW64 /d/Marquee_MERN (main)
+$ git checkout -b new-branch
+Switched to a new branch 'new-branch'
+
+laxma@Laksh MINGW64 /d/Marquee_MERN (new-branch)
+$ git branch
+  feature-button
+  main
+* new-branch
+
+laxma@Laksh MINGW64 /d/Marquee_MERN (new-branch)

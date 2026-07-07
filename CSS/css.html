@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro to CSS</title>
+    <!-- Internal CSS -->
+    <style>
+      /* Universal  */
+      /* * {
+        color: white;
+      } */
+
+      /* Type or Name Selector */
+      ul {
+        color: blue;
+      }
+
+      /* class Selector : .classname */
+      .formatting {
+        background-color: bisque;
+        font-family: cursive;
+        color: aqua;
+      }
+      /* ID Selector : #id */
+      #heading {
+        color: blueviolet;
+      }
+
+      /* Group Selector: h1,h2,h2,li{} */
+
+      h3,
+      p,
+      #link,
+      .formatting {
+        font-family:
+          'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      /* Descendant Selector: Select child element inside the parent element */
+      ul li {
+        color: black;
+        background-color: azure;
+      }
+
+      /* Child Selector:Direct Children */
+      section > p {
+        color: red;
+      }
+      div > p {
+        color: blue;
+      }
+
+      /* Attributes Selector */
+      input[placeholder] {
+        background-color: red;
+      }
+      /* element[key="value"] */
+      h2[class=''] {
+        color: rgb(247, 94, 12);
+      }
+
+      /* Pseudo Classes : Element Selector */
+      a:hover {
+        color: red;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="">Heading Level 2</h2>
+    <!-- Inline CSS : Opening tag of an element -->
+    <h3 id="heading">Types of CSS :</h3>
+    <p class="formatting">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+      cupiditate consequatur ut!
+    </p>
+    <ul class="formatting">
+      <li>Inline CSS</li>
+      <li>Internal CSS</li>
+      <li>External CSS</li>
+    </ul>
+
+    <a href="#" id="link">Click here</a>
+
+    <section>
+      <div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
+          non ad molestiae sit temporibus incidunt esse. Soluta iusto commodi
+          natus at.
+        </p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+        perspiciatis quos assumenda!
+      </p>
+      <div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+          sint, mollitia dolorum a, assumenda blanditiis neque possimus nisi
+          officiis optio ipsum.
+        </p>
+      </div>
+    </section>
+
+    <form action="">
+      <label for="name">Username:</label>
+      <input
+        type="text"
+        id="name"
+        name="username"
+        placeholder="Enter your name"
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+      />
+      <input type="button" value="Submit" />
+    </form>
+  </body>
+</html>
